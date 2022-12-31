@@ -9,7 +9,7 @@ class SecondRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Register Page Route'),
+        title: const Text('Register Page'),
       ),
       body: Center(
         child: ListView(

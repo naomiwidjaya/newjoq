@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:newjoq/profile.dart';
 import 'package:newjoq/register.dart';
+import 'package:newjoq/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -75,6 +77,10 @@ class _LoginState extends State<Login> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: ElevatedButton(
                 onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
                   debugPrint(nameController.text);
                   debugPrint(passwordController.text);
                 },
